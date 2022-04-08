@@ -12,7 +12,7 @@ def be_polite(fn):
 
 @be_polite
 def greet():
-    return "My name is Colt."
+    return "My name is Clément."
 
 
 @be_polite
@@ -26,4 +26,4 @@ def hello_world():  # put application's code here
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=5000)
