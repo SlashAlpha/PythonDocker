@@ -1,8 +1,7 @@
 from flask import Flask
-from flask_restful import Api
 # pip freeze > requirements.txt !!!
 app = Flask(__name__)
-api = Api(app)
+
 
 
 def be_polite(fn):
@@ -28,4 +27,4 @@ def hello_world():  # put application's code here
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0')
